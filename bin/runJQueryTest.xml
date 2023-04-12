@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce">
+    <test name="Run on Firefox">
+    <parameter name = "browser" value = "firefox" />		
+    <classes>
+      <class name="com.jquery.uploaFile.Level_11_Upload_Files"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Run on Chrome">
+    <parameter name = "browser" value = "chrome" />		
+    <classes>
+      <class name="com.jquery.uploaFile.Level_11_Upload_Files"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.facebook.register.Level_13_Element_Undisplayed">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="User_01_Verify_Element_Displayed"/>
+          <include name="User_01_Verify_Element_Undisplayed_In_DOM"/>
+        </methods>
+      </class> <!-- com.facebook.register.Level_13_Element_Undisplayed -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
+  <test thread-count="5" name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.facebook.register.Level_13_Element_Undisplayed">
+        <methods>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="User_01_Verify_Element_Displayed"/>
+          <include name="User_01_Verify_Element_Undisplayed_In_DOM"/>
+        </methods>
+      </class> <!-- com.facebook.register.Level_13_Element_Undisplayed -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [NopCommerce] -->
