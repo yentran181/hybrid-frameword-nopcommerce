@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.jquery.datatable.Level_11_Upload_Files">
+      <class name="com.nopcommerce.user.Level_15_P3_Extent_Report_V5_Screenshot">
         <methods>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="Upload_01_File_Per_Time"/>
-          <include name="Upload_Multi_File_Per_Time"/>
+          <include name="User_02_Login"/>
+          <include name="User_01_Register"/>
         </methods>
-      </class> <!-- com.jquery.datatable.Level_11_Upload_Files -->
+      </class> <!-- com.nopcommerce.user.Level_15_P3_Extent_Report_V5_Screenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

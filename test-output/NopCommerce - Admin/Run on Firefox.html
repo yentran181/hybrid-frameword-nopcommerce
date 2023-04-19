@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>TestNG:  Run on Firefox</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Run on Firefox</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 12 16:34:27 ICT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>18 seconds (18456 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nopcommerce.user.Level_14_Log_ReportNG.User_01_Register()'><b>User_01_Register</b><br>Test class: com.nopcommerce.user.Level_14_Log_ReportNG<br/>
+<a href="#Output-2071674587" onClick='toggleBox("Output-2071674587", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2071674587" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2071674587">
+[2023-04-12 16:34:35,795] Register - Step 01: Navigate to 'Register' page
+<br/>
+[2023-04-12 16:34:37,177] Register - Step 02: Enter to Firstname textbox with value is: Automation
+<br/>
+[2023-04-12 16:34:37,361] Register - Step 03: Enter to LastName textbox with value is: FC
+<br/>
+[2023-04-12 16:34:37,530] Register - Step 04: Enter to Email textbox with value is: yentran82693@gmail.com
+<br/>
+[2023-04-12 16:34:37,702] Register - Step 05: Enter to Password textbox with value is: 123456
+<br/>
+[2023-04-12 16:34:37,833] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+<br/>
+[2023-04-12 16:34:37,960] Register - Step 07: Click to 'Register' button
+<br/>
+[2023-04-12 16:34:39,022] Register - Step 08: Verify register success message is displayed
+<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.nopcommerce.user.Level_14_Log_ReportNG@16150369</td></tr>
+<tr>
+<td title='com.nopcommerce.user.Level_14_Log_ReportNG.User_02_Login()'><b>User_02_Login</b><br>Test class: com.nopcommerce.user.Level_14_Log_ReportNG<br/>
+<a href="#Output-1540031691" onClick='toggleBox("Output-1540031691", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1540031691" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1540031691">
+[2023-04-12 16:34:39,158] Login 01: Navigate to 'Login' page
+<br/>
+[2023-04-12 16:34:39,782] Login 02: Enter to Email textbox with value is: yentran82693@gmail.com
+<br/>
+[2023-04-12 16:34:39,956] Login 03: Enter to Password textbox with value is: 123456
+<br/>
+[2023-04-12 16:34:40,095] Login 04: Click to 'Login' button
+<br/>
+[2023-04-12 16:34:40,979] Login 05: Verify 'My Account' link is displayed
+<br/>
+[2023-04-12 16:34:41,149] Login 06: Navigate to 'My Account' page
+<br/>
+[2023-04-12 16:34:41,718] Login 07: Verify 'Customer info' page is displayed
+<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.nopcommerce.user.Level_14_Log_ReportNG@16150369</td></tr>
+</table><p>
+</body>
+</html>

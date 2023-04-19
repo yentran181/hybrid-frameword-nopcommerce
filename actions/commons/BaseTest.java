@@ -1,8 +1,11 @@
 package commons;
 
+import java.io.File;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -13,6 +16,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -22,6 +26,16 @@ public class BaseTest extends BasePage {
 	// code sẽ không rõ ràng, vì thực tế 2 driver của 2 class không liên quan đến
 	// nhau.
 	private WebDriver baseTestDriver;
+	protected final Log log;
+	
+	protected BaseTest() {
+		 log = LogFactory.getLog(getClass());
+	}
+
+	@BeforeSuite
+	public void initBeforeSuite() {
+		deleteAllureReport();
+	}
 
 	protected WebDriver getBrowserDriver(String browserName, String pageURL) {
 		if (browserName.equals("chrome")) {
@@ -92,6 +106,9 @@ public class BaseTest extends BasePage {
 		return baseTestDriver;
 	}
 
+	public WebDriver getDriverInstance() {
+		return this.baseTestDriver;
+	}
 	protected boolean verifyTrue(boolean condition) {
 		boolean pass = true;
 		try {
@@ -106,7 +123,6 @@ public class BaseTest extends BasePage {
 		}
 		return pass;
 	}
-
 
 	protected boolean verifyFalse(boolean condition) {
 		boolean pass = true;
@@ -140,5 +156,21 @@ public class BaseTest extends BasePage {
 
 		Random random = new Random();
 		return "yentran" + random.nextInt(99999) + "@gmail.com";
+	}
+
+	public void  deleteAllureReport() {
+		try {
+			String pathFolderDownload = GlobalConstants.PROJECT_PATH + "/allure-json";
+			File file = new File(pathFolderDownload);
+			File[] listOfFiles = file.listFiles();
+			for (int i = 0; i < listOfFiles.length; i++) {
+				if (listOfFiles[i].isFile()) {
+					System.out.println(listOfFiles[i].getName());
+					new File(listOfFiles[i].toString()).delete();
+				}
+			}
+		} catch (Exception e){
+			System.out.println(e.getMessage());
+		}
 	}
 }

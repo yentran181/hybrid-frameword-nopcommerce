@@ -4,30 +4,28 @@
   <listeners>
     <listener class-name="commons.MethodListener"/>
   </listeners>
-  <test thread-count="5" name="Run on Chrome(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="com.facebook.register.Level_13_Element_Undisplayed">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="User_01_Verify_Element_Displayed"/>
-          <include name="User_01_Verify_Element_Undisplayed_In_DOM"/>
-        </methods>
-      </class> <!-- com.facebook.register.Level_13_Element_Undisplayed -->
-    </classes>
-  </test> <!-- Run on Chrome(failed) -->
   <test thread-count="5" name="Run on Firefox(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.facebook.register.Level_13_Element_Undisplayed">
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
         <methods>
-          <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="User_01_Verify_Element_Displayed"/>
-          <include name="User_01_Verify_Element_Undisplayed_In_DOM"/>
+          <include name="afterClass"/>
+          <include name="User_02_Login"/>
         </methods>
-      </class> <!-- com.facebook.register.Level_13_Element_Undisplayed -->
+      </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
     </classes>
   </test> <!-- Run on Firefox(failed) -->
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="User_02_Login"/>
+        </methods>
+      </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
+    </classes>
+  </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [NopCommerce] -->

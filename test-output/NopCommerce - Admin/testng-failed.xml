@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NopCommerce - Admin]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.nopcommerce.user.Level_14_Log_ReportNG">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="User_02_Login"/>
+        </methods>
+      </class> <!-- com.nopcommerce.user.Level_14_Log_ReportNG -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [NopCommerce - Admin] -->

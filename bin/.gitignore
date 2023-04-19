@@ -1,1 +1,8 @@
+/com/
 /commons/
+/pageObjects/
+/pageUIs/
+/reportConfig/
+/retryConfig/
+/ultilitiesConfig/
+/allure.properties
