@@ -1,17 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[2023-04-21 13:58:28,986] Pre-Condition - Step 01: Navigate to 'Register' page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:29,683] Pre-Condition - Step 02: Enter to Firstname textbox with value is: Automation
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:30,004] Pre-Condition - Step 03: Enter to LastName textbox with value is: FC
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:30,560] Pre-Condition - Step 04: Enter to Email textbox with value is: yentran93498@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:30,839] Pre-Condition - Step 05: Enter to Password textbox with value is: 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:31,058] Pre-Condition - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:31,292] Pre-Condition - Step 07: Click to 'Register' button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:32,110] Pre-Condition - Step 07: Verify register success message is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:32,208] Pre-Condition - Step 09: Navigate to 'Login' page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:32,733] Pre-Conditionin - Step 10: Enter to Email textbox with value is: yentran93498@gmail.com
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:33,052] Pre-Condition - Step 11: Enter to Password textbox with value is: 123456
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:33,683] Pre-Condition - Step 12: Click to 'Login' button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:35,698] Pre-Condition - Step 13: Verify 'Customer info' page is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:37,431] OS name = Windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-21 13:58:37,432] Driver instance name = chromedriver: chrome on windows (8256dc98a263dcde9436306ef102fb6c)
+<br>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2023-04-19T06:28:47Z" name="NopCommerce - User" finished-at="2023-04-19T06:29:00Z" duration-ms="12925">
+  <suite started-at="2023-04-21T06:58:24Z" name="NopCommerce - User" finished-at="2023-04-21T06:58:38Z" duration-ms="14052">
     <groups>
     </groups>
-    <test started-at="2023-04-19T06:28:47Z" name="Run on Chrome" finished-at="2023-04-19T06:29:00Z" duration-ms="12925">
-      <class name="com.nopcommerce.user.Level_15_P4_Allure">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_15_P4_Allure@5432c277]" started-at="2023-04-19T06:28:47Z" name="initBeforeSuite" finished-at="2023-04-19T06:28:47Z" duration-ms="100" status="PASS">
+    <test started-at="2023-04-21T06:58:24Z" name="Run on Chrome" finished-at="2023-04-21T06:58:38Z" duration-ms="14052">
+      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:24Z" name="initBeforeSuite" finished-at="2023-04-21T06:58:24Z" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_15_P4_Allure@5432c277]" started-at="2023-04-19T06:28:47Z" name="beforeClass" finished-at="2023-04-19T06:28:53Z" duration-ms="6063" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:24Z" name="beforeClass" finished-at="2023-04-21T06:58:36Z" duration-ms="11561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,59 +80,97 @@
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[[2023-04-21 13:58:28,986] Pre-Condition - Step 01: Navigate to 'Register' page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:29,683] Pre-Condition - Step 02: Enter to Firstname textbox with value is: Automation
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:30,004] Pre-Condition - Step 03: Enter to LastName textbox with value is: FC
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:30,560] Pre-Condition - Step 04: Enter to Email textbox with value is: yentran93498@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:30,839] Pre-Condition - Step 05: Enter to Password textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:31,058] Pre-Condition - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:31,292] Pre-Condition - Step 07: Click to 'Register' button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:32,110] Pre-Condition - Step 07: Verify register success message is displayed
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:32,208] Pre-Condition - Step 09: Navigate to 'Login' page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:32,733] Pre-Conditionin - Step 10: Enter to Email textbox with value is: yentran93498@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:33,052] Pre-Condition - Step 11: Enter to Password textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:33,683] Pre-Condition - Step 12: Click to 'Login' button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:35,698] Pre-Condition - Step 13: Verify 'Customer info' page is displayed
+<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_15_P4_Allure@5432c277]" started-at="2023-04-19T06:28:53Z" name="User_01_Register" finished-at="2023-04-19T06:28:57Z" duration-ms="3581" status="PASS">
+        <test-method signature="Search_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:36Z" name="Search_01_Empty_Data" finished-at="2023-04-21T06:58:36Z" duration-ms="313" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_01_Register -->
-        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_15_P4_Allure@5432c277]" started-at="2023-04-19T06:28:57Z" name="User_02_Login" finished-at="2023-04-19T06:28:59Z" duration-ms="1958" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [false] but found [true]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertFalse(Assert.java:65)
-at org.testng.Assert.assertFalse(Assert.java:75)
-at com.nopcommerce.user.Level_15_P4_Allure.User_02_Login(Level_15_P4_Allure.java:90)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.TestNG.privateMain(TestNG.java:1354)
-at org.testng.TestNG.main(TestNG.java:1323)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- Search_01_Empty_Data -->
+        <test-method signature="Search_02_Relative_Product_Name()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_02_Relative_Product_Name" finished-at="2023-04-21T06:58:37Z" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- User_02_Login -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_15_P4_Allure@5432c277]" started-at="2023-04-19T06:28:59Z" name="afterClass" finished-at="2023-04-19T06:29:00Z" duration-ms="643" status="PASS">
+        </test-method> <!-- Search_02_Relative_Product_Name -->
+        <test-method signature="Search_03_Absolute_Product_Name()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_03_Absolute_Product_Name" finished-at="2023-04-21T06:58:37Z" duration-ms="49" status="PASS">
           <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_03_Absolute_Product_Name -->
+        <test-method signature="Search_04_Parent_Category()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_04_Parent_Category" finished-at="2023-04-21T06:58:37Z" duration-ms="21" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_04_Parent_Category -->
+        <test-method signature="Search_05_Incorrect_Manufactorer()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_05_Incorrect_Manufactorer" finished-at="2023-04-21T06:58:37Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_05_Incorrect_Manufactorer -->
+        <test-method signature="Search_06_Correct_Manufactorer()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_06_Correct_Manufactorer" finished-at="2023-04-21T06:58:37Z" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search_06_Correct_Manufactorer -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="afterClass" finished-at="2023-04-21T06:58:38Z" duration-ms="1039" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-04-21 13:58:37,431] OS name = Windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-21 13:58:37,432] Driver instance name = chromedriver: chrome on windows (8256dc98a263dcde9436306ef102fb6c)
+<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_15_P4_Allure -->
+      </class> <!-- com.nopcommerce.user.Level_17_Custom_Close_Driver -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- NopCommerce - User -->
 </testng-results>
