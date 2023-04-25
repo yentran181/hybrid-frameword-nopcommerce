@@ -3,19 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver">
+      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object">
         <methods>
-          <include name="Search_04_Parent_Category"/>
-          <include name="Search_05_Incorrect_Manufactorer"/>
-          <include name="afterClass"/>
-          <include name="Search_03_Absolute_Product_Name"/>
-          <include name="Search_02_Relative_Product_Name"/>
-          <include name="Search_06_Correct_Manufactorer"/>
           <include name="beforeClass"/>
-          <include name="Search_01_Empty_Data"/>
+          <include name="User_02_Login"/>
+          <include name="User_01_Register"/>
+          <include name="afterClass"/>
           <include name="initBeforeSuite"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_17_Custom_Close_Driver -->
+      </class> <!-- com.nopcommerce.user.Level_18_P1_Pattern_Object -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

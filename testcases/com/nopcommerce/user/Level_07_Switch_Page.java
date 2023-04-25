@@ -66,8 +66,8 @@ public class Level_07_Switch_Page extends BaseTest {
 	@Test
 	public void User_03_My_Account() {
 
-		customerInforPage = homePage.clickToMyAccountLink();		
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed(emailAddress));	
+		customerInforPage = homePage.openMyAccountPage();		
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());	
 	}
 	
 	@Test

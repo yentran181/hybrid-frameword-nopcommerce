@@ -3,7 +3,7 @@ package pageObjects.nopCommerce.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.nopCommerce.user.BasePageUI;
+import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 import pageUIs.nopCommerce.user.CustomerInforUI;
 
 public class UserCustomerInforPageObject extends BasePage {
@@ -14,13 +14,13 @@ public class UserCustomerInforPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public boolean isCustomerInforPageDisplayed(String fieldName) {
-		return isElementDisplayed(driver, castRestParameter(CustomerInforUI.CUSTOMER_INFOR_HEADER, fieldName));
+	public boolean isCustomerInforPageDisplayed() {
+		return isElementDisplayed(driver, CustomerInforUI.CUSTOMER_INFOR_HEADER1);
 	}
 
 	public UserCustomerAddressesPageObject openAddressesPage(WebDriver driver) {
-		waitForElemetClickable(driver, BasePageUI.ADĐRESES_LINK);
-		clickToElement(driver, BasePageUI.ADĐRESES_LINK);
+		waitForElemetClickable(driver, BasePageNopCommerceUI.ADĐRESES_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ADĐRESES_LINK);
 		return PageGeneraterManager.getUserAddressesPage(driver);
 	}
 

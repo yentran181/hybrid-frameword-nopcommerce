@@ -1,77 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[2023-04-21 13:58:28,986] Pre-Condition - Step 01: Navigate to 'Register' page
+      <![CDATA[[2023-04-22 09:21:29,512] Register - Step 01: Navigate to 'Register' page
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:29,683] Pre-Condition - Step 02: Enter to Firstname textbox with value is: Automation
+      <![CDATA[[2023-04-22 09:21:31,016] Register - Step 02: Select gender is: Female
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:30,004] Pre-Condition - Step 03: Enter to LastName textbox with value is: FC
+      <![CDATA[[2023-04-22 09:21:31,306] Register - Step 02: Enter to Firstname textbox with value is: Automation
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:30,560] Pre-Condition - Step 04: Enter to Email textbox with value is: yentran93498@gmail.com
+      <![CDATA[[2023-04-22 09:21:31,855] Register - Step 03: Enter to LastName textbox with value is: FC
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:30,839] Pre-Condition - Step 05: Enter to Password textbox with value is: 123456
+      <![CDATA[[2023-04-22 09:21:32,124] Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: 18/1/1997
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:31,058] Pre-Condition - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+      <![CDATA[[2023-04-22 09:21:32,986] Register - Step 04: Enter to Email textbox with value is: yentran22082@gmail.com
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:31,292] Pre-Condition - Step 07: Click to 'Register' button
+      <![CDATA[[2023-04-22 09:21:33,469] Register - Step 05: Enter to Password textbox with value is: 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:32,110] Pre-Condition - Step 07: Verify register success message is displayed
+      <![CDATA[[2023-04-22 09:21:33,731] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:32,208] Pre-Condition - Step 09: Navigate to 'Login' page
+      <![CDATA[[2023-04-22 09:21:34,011] Register - Step 07: Click to 'Register' button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:32,733] Pre-Conditionin - Step 10: Enter to Email textbox with value is: yentran93498@gmail.com
+      <![CDATA[[2023-04-22 09:21:35,076] Register - Step 08: Verify register success message is displayed
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:33,052] Pre-Condition - Step 11: Enter to Password textbox with value is: 123456
+      <![CDATA[[2023-04-22 09:21:35,396] Login 01: Navigate to 'Login' page
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:33,683] Pre-Condition - Step 12: Click to 'Login' button
+      <![CDATA[[2023-04-22 09:21:36,036] Login 02: Enter to Email textbox with value is: yentran22082@gmail.com
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:35,698] Pre-Condition - Step 13: Verify 'Customer info' page is displayed
+      <![CDATA[[2023-04-22 09:21:36,416] Login 03: Enter to Password textbox with value is: 123456
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:37,431] OS name = Windows 10
+      <![CDATA[[2023-04-22 09:21:36,659] Login 04: Click to 'Login' button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[2023-04-21 13:58:37,432] Driver instance name = chromedriver: chrome on windows (8256dc98a263dcde9436306ef102fb6c)
+      <![CDATA[[2023-04-22 09:21:37,722] Login 05: Verify 'My Account' link is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-22 09:21:37,918] My Account - Step 01: Navigate to 'My Account' page
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-22 09:21:38,509] My Account - Step 02: Verify 'Customer Infor' page is displayed
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-22 09:21:38,528] OS name = Windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[2023-04-22 09:21:38,531] Driver instance name = chromedriver: chrome on windows (ddcbe718fe0e511bbd85b849dd676d27)
 <br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-04-21T06:58:24Z" name="NopCommerce - User" finished-at="2023-04-21T06:58:38Z" duration-ms="14052">
+  <suite started-at="2023-04-22T02:21:19Z" name="NopCommerce - User" finished-at="2023-04-22T02:21:40Z" duration-ms="20167">
     <groups>
     </groups>
-    <test started-at="2023-04-21T06:58:24Z" name="Run on Chrome" finished-at="2023-04-21T06:58:38Z" duration-ms="14052">
-      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:24Z" name="initBeforeSuite" finished-at="2023-04-21T06:58:24Z" duration-ms="59" status="PASS">
+    <test started-at="2023-04-22T02:21:19Z" name="Run on Chrome" finished-at="2023-04-22T02:21:40Z" duration-ms="20167">
+      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:19Z" name="initBeforeSuite" finished-at="2023-04-22T02:21:19Z" duration-ms="66" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:24Z" name="beforeClass" finished-at="2023-04-21T06:58:36Z" duration-ms="11561" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:20Z" name="beforeClass" finished-at="2023-04-22T02:21:29Z" duration-ms="9301" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -80,97 +96,140 @@
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[[2023-04-21 13:58:28,986] Pre-Condition - Step 01: Navigate to 'Register' page
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:29,683] Pre-Condition - Step 02: Enter to Firstname textbox with value is: Automation
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:30,004] Pre-Condition - Step 03: Enter to LastName textbox with value is: FC
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:30,560] Pre-Condition - Step 04: Enter to Email textbox with value is: yentran93498@gmail.com
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:30,839] Pre-Condition - Step 05: Enter to Password textbox with value is: 123456
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:31,058] Pre-Condition - Step 06: Enter to ConfirmPassword textbox with value is: 123456
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:31,292] Pre-Condition - Step 07: Click to 'Register' button
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:32,110] Pre-Condition - Step 07: Verify register success message is displayed
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:32,208] Pre-Condition - Step 09: Navigate to 'Login' page
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:32,733] Pre-Conditionin - Step 10: Enter to Email textbox with value is: yentran93498@gmail.com
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:33,052] Pre-Condition - Step 11: Enter to Password textbox with value is: 123456
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:33,683] Pre-Condition - Step 12: Click to 'Login' button
-<br>]]>
-            </line>
-            <line>
-              <![CDATA[[2023-04-21 13:58:35,698] Pre-Condition - Step 13: Verify 'Customer info' page is displayed
-<br>]]>
-            </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Search_01_Empty_Data()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:36Z" name="Search_01_Empty_Data" finished-at="2023-04-21T06:58:36Z" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_01_Empty_Data -->
-        <test-method signature="Search_02_Relative_Product_Name()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_02_Relative_Product_Name" finished-at="2023-04-21T06:58:37Z" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_02_Relative_Product_Name -->
-        <test-method signature="Search_03_Absolute_Product_Name()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_03_Absolute_Product_Name" finished-at="2023-04-21T06:58:37Z" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_03_Absolute_Product_Name -->
-        <test-method signature="Search_04_Parent_Category()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_04_Parent_Category" finished-at="2023-04-21T06:58:37Z" duration-ms="21" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_04_Parent_Category -->
-        <test-method signature="Search_05_Incorrect_Manufactorer()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_05_Incorrect_Manufactorer" finished-at="2023-04-21T06:58:37Z" duration-ms="17" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_05_Incorrect_Manufactorer -->
-        <test-method signature="Search_06_Correct_Manufactorer()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="Search_06_Correct_Manufactorer" finished-at="2023-04-21T06:58:37Z" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Search_06_Correct_Manufactorer -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_17_Custom_Close_Driver@1afdd473]" started-at="2023-04-21T06:58:37Z" name="afterClass" finished-at="2023-04-21T06:58:38Z" duration-ms="1039" status="PASS">
+        <test-method signature="User_01_Register()[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:29Z" name="User_01_Register" finished-at="2023-04-22T02:21:35Z" duration-ms="5903" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[2023-04-21 13:58:37,431] OS name = Windows 10
+              <![CDATA[[2023-04-22 09:21:29,512] Register - Step 01: Navigate to 'Register' page
 <br>]]>
             </line>
             <line>
-              <![CDATA[[2023-04-21 13:58:37,432] Driver instance name = chromedriver: chrome on windows (8256dc98a263dcde9436306ef102fb6c)
+              <![CDATA[[2023-04-22 09:21:31,016] Register - Step 02: Select gender is: Female
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:31,306] Register - Step 02: Enter to Firstname textbox with value is: Automation
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:31,855] Register - Step 03: Enter to LastName textbox with value is: FC
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:32,124] Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: 18/1/1997
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:32,986] Register - Step 04: Enter to Email textbox with value is: yentran22082@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:33,469] Register - Step 05: Enter to Password textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:33,731] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:34,011] Register - Step 07: Click to 'Register' button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:35,076] Register - Step 08: Verify register success message is displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_01_Register -->
+        <test-method signature="User_02_Login()[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:35Z" name="User_02_Login" finished-at="2023-04-22T02:21:37Z" duration-ms="2513" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-04-22 09:21:35,396] Login 01: Navigate to 'Login' page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:36,036] Login 02: Enter to Email textbox with value is: yentran22082@gmail.com
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:36,416] Login 03: Enter to Password textbox with value is: 123456
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:36,659] Login 04: Click to 'Login' button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:37,722] Login 05: Verify 'My Account' link is displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_02_Login -->
+        <test-method signature="User_03_My_Account()[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:37Z" name="User_03_My_Account" finished-at="2023-04-22T02:21:38Z" duration-ms="604" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Locator type is not supported!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Locator type is not supported!
+at commons.BasePage.getByLocator(BasePage.java:318)
+at commons.BasePage.getWebElement(BasePage.java:323)
+at commons.BasePage.isElementDisplayed(BasePage.java:416)
+at pageObjects.nopCommerce.user.UserCustomerInforPageObject.isCustomerInforPageDisplayed(UserCustomerInforPageObject.java:18)
+at com.nopcommerce.user.Level_18_P1_Pattern_Object.User_03_My_Account(Level_18_P1_Pattern_Object.java:115)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-04-22 09:21:37,918] My Account - Step 01: Navigate to 'My Account' page
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:38,509] My Account - Step 02: Verify 'Customer Infor' page is displayed
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- User_03_My_Account -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.Level_18_P1_Pattern_Object@dbd8e44]" started-at="2023-04-22T02:21:38Z" name="afterClass" finished-at="2023-04-22T02:21:40Z" duration-ms="1596" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[2023-04-22 09:21:38,528] OS name = Windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[2023-04-22 09:21:38,531] Driver instance name = chromedriver: chrome on windows (ddcbe718fe0e511bbd85b849dd676d27)
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.nopcommerce.user.Level_17_Custom_Close_Driver -->
+      </class> <!-- com.nopcommerce.user.Level_18_P1_Pattern_Object -->
     </test> <!-- Run on Chrome -->
   </suite> <!-- NopCommerce - User -->
 </testng-results>

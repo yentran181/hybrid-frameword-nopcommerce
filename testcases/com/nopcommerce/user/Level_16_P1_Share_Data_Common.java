@@ -51,7 +51,7 @@ public class Level_16_P1_Share_Data_Common extends BaseTest {
 		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 		
 		log.info("Login 06: Navigate to 'My Account' page");
-		customerInforPage = homePage.clickToMyAccountLink();
+		customerInforPage = homePage.openMyAccountPage();
 		
 //		log.info("Login 07: Verify 'Customer info' page is displayed");
 //		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed("My account - Customer info"));	

@@ -63,8 +63,8 @@ public class Level_12_Assert_Verify extends BaseTest {
 		homePage = loginPage.clickToLoginButton();
 		verifyFalse(homePage.isMyAccountLinkDisplayed());
 
-		customerInforPage = homePage.clickToMyAccountLink();		
-		verifyFalse(customerInforPage.isCustomerInforPageDisplayed("My account - Customer info"));	
+		customerInforPage = homePage.openMyAccountPage();		
+		verifyFalse(customerInforPage.isCustomerInforPageDisplayed());	
 
 		//Customer Info -> Reward points
 		rewardPointsPage = (UserRewardPointsPageObject) customerInforPage.openPageAtMyAccountByName(driver, "Reward points");

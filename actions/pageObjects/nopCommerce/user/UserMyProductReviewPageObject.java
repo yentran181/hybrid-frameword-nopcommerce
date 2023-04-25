@@ -3,7 +3,7 @@ package pageObjects.nopCommerce.user;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import pageUIs.nopCommerce.user.BasePageUI;
+import pageUIs.nopCommerce.user.BasePageNopCommerceUI;
 
 public class UserMyProductReviewPageObject extends BasePage {
 
@@ -14,8 +14,8 @@ public class UserMyProductReviewPageObject extends BasePage {
 	}
 
 	public UserCustomerInforPageObject openCustomerInforPage(WebDriver driver) {
-		waitForElemetClickable(driver, BasePageUI.CUSTOMER_INFOR_LINK);
-		clickToElement(driver, BasePageUI.CUSTOMER_INFOR_LINK);
+		waitForElemetClickable(driver, BasePageNopCommerceUI.CUSTOMER_INFOR_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.CUSTOMER_INFOR_LINK);
 		return null;
 	}
 

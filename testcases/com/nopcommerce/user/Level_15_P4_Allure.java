@@ -89,9 +89,9 @@ public class Level_15_P4_Allure extends BaseTest {
 		
 		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
 		
-		customerInforPage = homePage.clickToMyAccountLink();
+		customerInforPage = homePage.openMyAccountPage();
 		
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed("My account - Customer info"));	
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());	
 
 		//Customer Info -> Reward points
 		rewardPointsPage = (UserRewardPointsPageObject) customerInforPage.openPageAtMyAccountByName(driver, "Reward points");

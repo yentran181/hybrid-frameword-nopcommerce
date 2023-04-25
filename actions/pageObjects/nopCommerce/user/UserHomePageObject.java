@@ -35,7 +35,7 @@ public class UserHomePageObject extends BasePage {
 	}
 
 	@Step("Navigate to 'My Account' page")
-	public UserCustomerInforPageObject clickToMyAccountLink() {
+	public UserCustomerInforPageObject openMyAccountPage() {
 		waitForElemetClickable(driver, HomePageUI.MY_ACCOUNT_LINK);
 		clickToElement(driver, HomePageUI.MY_ACCOUNT_LINK);
 		return PageGeneraterManager.getUserCustomerInfoPage(driver);

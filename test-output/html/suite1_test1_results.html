@@ -12,100 +12,138 @@
 <body>
 <h1>Run on Chrome</h1>
 <p>
-  Test duration: 13.089s
+  Test duration: 19.983s
 </p>
 
 
 
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.user.Level_18_P1_Pattern_Object</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  User_03_My_Account
+      </td>
+  <td class="duration">
+    0.604s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        [2023-04-22 09:21:37,918] My Account - Step 01: Navigate to &apos;My Account&apos; page<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:38,509] My Account - Step 02: Verify &apos;Customer Infor&apos; page is displayed<br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.RuntimeException: Locator type is not supported!</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              commons.BasePage.getByLocator(BasePage.java:318)<br />
+              commons.BasePage.getWebElement(BasePage.java:323)<br />
+              commons.BasePage.isElementDisplayed(BasePage.java:416)<br />
+              pageObjects.nopCommerce.user.UserCustomerInforPageObject.isCustomerInforPageDisplayed(UserCustomerInforPageObject.java:18)<br />
+              com.nopcommerce.user.Level_18_P1_Pattern_Object.User_03_My_Account(Level_18_P1_Pattern_Object.java:115)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:566)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
+              org.testng.TestRunner.run(TestRunner.java:505)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:364)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1137)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1049)<br />
+              org.testng.TestNG.run(TestNG.java:1017)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+                </div>
+      </td>
+</tr>
+      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.nopcommerce.user.Level_17_Custom_Close_Driver</td>
+        <td colspan="3" class="group">com.nopcommerce.user.Level_18_P1_Pattern_Object</td>
       </tr>
             
 <tr>
   <td class="method">
-                  Search_01_Empty_Data
+                  User_01_Register
       </td>
   <td class="duration">
-    0.313s
+    5.903s
   </td>
   <td class="result">
         
     
-        
+            <div class="testOutput">
+                        [2023-04-22 09:21:29,512] Register - Step 01: Navigate to &apos;Register&apos; page<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:31,016] Register - Step 02: Select gender is: Female<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:31,306] Register - Step 02: Enter to Firstname textbox with value is: Automation<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:31,855] Register - Step 03: Enter to LastName textbox with value is: FC<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:32,124] Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: 18/1/1997<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:32,986] Register - Step 04: Enter to Email textbox with value is: yentran22082@gmail.com<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:33,469] Register - Step 05: Enter to Password textbox with value is: 123456<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:33,731] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:34,011] Register - Step 07: Click to &apos;Register&apos; button<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:35,076] Register - Step 08: Verify register success message is displayed<br/>
+&lt;br&gt;<br />
+                  </div>
+    
 
       </td>
 </tr>
 <tr>
   <td class="method">
-                  Search_02_Relative_Product_Name
+                  User_02_Login
       </td>
   <td class="duration">
-    0.011s
+    2.513s
   </td>
   <td class="result">
         
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Search_03_Absolute_Product_Name
-      </td>
-  <td class="duration">
-    0.049s
-  </td>
-  <td class="result">
-        
+            <div class="testOutput">
+                        [2023-04-22 09:21:35,396] Login 01: Navigate to &apos;Login&apos; page<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:36,036] Login 02: Enter to Email textbox with value is: yentran22082@gmail.com<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:36,416] Login 03: Enter to Password textbox with value is: 123456<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:36,659] Login 04: Click to &apos;Login&apos; button<br/>
+&lt;br&gt;<br />
+                                [2023-04-22 09:21:37,722] Login 05: Verify &apos;My Account&apos; link is displayed<br/>
+&lt;br&gt;<br />
+                  </div>
     
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Search_04_Parent_Category
-      </td>
-  <td class="duration">
-    0.021s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Search_05_Incorrect_Manufactorer
-      </td>
-  <td class="duration">
-    0.017s
-  </td>
-  <td class="result">
-        
-    
-        
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  Search_06_Correct_Manufactorer
-      </td>
-  <td class="duration">
-    0.019s
-  </td>
-  <td class="result">
-        
-    
-        
 
       </td>
 </tr>

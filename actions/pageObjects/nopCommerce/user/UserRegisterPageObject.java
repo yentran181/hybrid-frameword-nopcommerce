@@ -114,5 +114,7 @@ public class UserRegisterPageObject extends BasePage {
 		waitForElemetClickable(driver, RegisterPageUI.LOGOUT_LINK);
 		clickToElement(driver, RegisterPageUI.LOGOUT_LINK);
 	}
+
+
 	
 }

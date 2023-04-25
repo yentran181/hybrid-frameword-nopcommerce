@@ -89,10 +89,10 @@ public class Level_14_Log_ReportNG extends BaseTest {
 		verifyTrue(homePage.isMyAccountLinkDisplayed());
 		
 		log.info("Login 06: Navigate to 'My Account' page");
-		customerInforPage = homePage.clickToMyAccountLink();
+		customerInforPage = homePage.openMyAccountPage();
 		
 		log.info("Login 07: Verify 'Customer info' page is displayed");
-		verifyTrue(customerInforPage.isCustomerInforPageDisplayed("My account - Customer info"));	
+		verifyTrue(customerInforPage.isCustomerInforPageDisplayed());	
 
 		//Customer Info -> Reward points
 		rewardPointsPage = (UserRewardPointsPageObject) customerInforPage.openPageAtMyAccountByName(driver, "Reward points");

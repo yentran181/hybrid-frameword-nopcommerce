@@ -23,7 +23,7 @@ import pageObjects.nopCommerce.user.UserRewardPointsPageObject;
 
 @Listeners(commons.MethodListener.class)
 
-public class Level_15_P1_ReportNG_Screenshot extends BaseTest {
+public class Level_18_P1_Pattern_Object extends BaseTest {
 	private WebDriver driver;
 	private String emailAddress = getRandomEmail();
 	private UserHomePageObject homePage;
@@ -33,6 +33,7 @@ public class Level_15_P1_ReportNG_Screenshot extends BaseTest {
 	private UserCustomerAddressesPageObject addressesPage;
 	private UserRewardPointsPageObject rewardPointsPage;
 	private String firstname , lastname, password;
+	private String gender, date, month, year;
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -44,6 +45,10 @@ public class Level_15_P1_ReportNG_Screenshot extends BaseTest {
 		firstname = "Automation";
 		lastname = "FC";
 		password = "123456";
+		gender = "Female";
+		date = "18";
+		month = "1";
+		year = "1997";
 	}
 	
 	@Test
@@ -51,23 +56,33 @@ public class Level_15_P1_ReportNG_Screenshot extends BaseTest {
 		log.info("Register - Step 01: Navigate to 'Register' page");
 		registerPage = homePage.openRegisterPage();
 		
+		log.info("Register - Step 02: Select gender is: " + gender);
+		registerPage.clickToRadioButtonBylabel(driver, gender);
+		
 		log.info("Register - Step 02: Enter to Firstname textbox with value is: " + firstname);
-		registerPage.inputToRegisterForm(firstname, "FirstName");
+		registerPage.inputToTextboxByID(driver, "FirstName", firstname);
 		
 		log.info("Register - Step 03: Enter to LastName textbox with value is: " + lastname);
-		registerPage.inputToRegisterForm(lastname,"LastName");
+		registerPage.inputToTextboxByID(driver, "LastName", lastname);
+	
+		log.info("Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: " + date + "/" + month + "/" + year);
+		registerPage.selectToDropdownByName(driver, "DateOfBirthDay", date);
+		registerPage.selectToDropdownByName(driver, "DateOfBirthMonth", month);
+		registerPage.selectToDropdownByName(driver, "DateOfBirthYear", year);
 		
 		log.info("Register - Step 04: Enter to Email textbox with value is: " + emailAddress);
-		registerPage.inputToRegisterForm(emailAddress,"Email");
+		registerPage.inputToTextboxByID(driver, "Email", emailAddress);
+		
+		registerPage.checkToCheckboxByLabelName(driver, "Newsletter");
 		
 		log.info("Register - Step 05: Enter to Password textbox with value is: " + password);
-		registerPage.inputToRegisterForm(password,"Password");
-		
+		registerPage.inputToTextboxByID(driver, "Password", password);
+		 
 		log.info("Register - Step 06: Enter to ConfirmPassword textbox with value is: " + password);
-		registerPage.inputToRegisterForm(password,"ConfirmPassword");
+		registerPage.inputToTextboxByID(driver, "ConfirmPassword", password);
 		
 		log.info("Register - Step 07: Click to 'Register' button");
-		registerPage.clickToRegisterButton();
+		registerPage.clicktoButtonByText(driver, "Register");;
 		
 		log.info("Register - Step 08: Verify register success message is displayed");
 		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed");
@@ -78,37 +93,41 @@ public class Level_15_P1_ReportNG_Screenshot extends BaseTest {
 		loginPage = registerPage.clickToLoginLink(); 	
 		
 		log.info("Login 02: Enter to Email textbox with value is: " + emailAddress);
-		loginPage.inputToLoginForm(emailAddress, "Email");
+		loginPage.inputToTextboxByID(driver, "Email", emailAddress);
 		
 		log.info("Login 03: Enter to Password textbox with value is: " + password);
-		loginPage.inputToLoginForm(password, "Password");
+		loginPage.inputToTextboxByID(driver, "Password", password);
 		
 		log.info("Login 04: Click to 'Login' button");
-		homePage = loginPage.clickToLoginButton();
+		loginPage.clicktoButtonByText(driver, "Log in");
+
 		
 		log.info("Login 05: Verify 'My Account' link is displayed");
-		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
-		
-		log.info("Login 06: Navigate to 'My Account' page");
-		customerInforPage = homePage.openMyAccountPage();
-		
-		log.info("Login 07: Verify 'Customer info' page is displayed");
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());	
-
-		//Customer Info -> Reward points
-		rewardPointsPage = (UserRewardPointsPageObject) customerInforPage.openPageAtMyAccountByName(driver, "Reward points");
-		
-		//Reward points -> Address
-		addressesPage = (UserCustomerAddressesPageObject) rewardPointsPage.openPageAtMyAccountByName(driver, "Addresses");
-		
-		//Address -> Reward points
-		rewardPointsPage = (UserRewardPointsPageObject) addressesPage.openPageAtMyAccountByName(driver, "Reward points");
-
-
+		Assert.assertTrue(homePage.isMyAccountLinkDisplayed());
 	}
 	
-	@AfterClass
+	@Test
+	public void User_03_My_Account() {
+		log.info("My Account - Step 01: Navigate to 'My Account' page");
+		customerInforPage = homePage.openMyAccountPage();
+		
+		log.info("My Account - Step 02: Verify 'Customer Infor' page is displayed");
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());
+		
+		log.info("Verify 'First Name' value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxAttributeValueByID(driver, "FirstName"), firstname);
+	
+		log.info("Verify 'Last Name' value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxAttributeValueByID(driver, "LastName"), lastname);
+
+		log.info("Verify 'Email' value is correctly");
+		Assert.assertEquals(customerInforPage.getTextboxAttributeValueByID(driver, "Email"), emailAddress);
+
+	
+	}
+	
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		driver.quit();
+		closeBrowserAndDriver();
 	}
 }

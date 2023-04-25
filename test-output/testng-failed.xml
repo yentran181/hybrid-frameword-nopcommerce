@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [NopCommerce - User]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Run on Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver">
+      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object">
         <methods>
-          <include name="Search_04_Parent_Category"/>
-          <include name="Search_05_Incorrect_Manufactorer"/>
-          <include name="afterClass"/>
-          <include name="Search_03_Absolute_Product_Name"/>
-          <include name="Search_02_Relative_Product_Name"/>
-          <include name="Search_06_Correct_Manufactorer"/>
           <include name="beforeClass"/>
-          <include name="Search_01_Empty_Data"/>
+          <include name="afterClass"/>
+          <include name="User_03_My_Account"/>
           <include name="initBeforeSuite"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_17_Custom_Close_Driver -->
+      </class> <!-- com.nopcommerce.user.Level_18_P1_Pattern_Object -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Run on Chrome(failed) -->
+</suite> <!-- Failed suite [NopCommerce - User] -->

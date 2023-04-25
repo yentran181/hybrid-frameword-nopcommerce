@@ -97,10 +97,10 @@ public class Level_15_P3_Extent_Report_V5_Screenshot extends BaseTest {
 		Assert.assertFalse(homePage.isMyAccountLinkDisplayed());
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Login 06: Navigate to 'My Account' page");
-		customerInforPage = homePage.clickToMyAccountLink();
+		customerInforPage = homePage.openMyAccountPage();
 		
 		ExtentTestManagerV5.getTest().log(Status.INFO, "Login 07: Verify 'Customer info' page is displayed");
-		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed("My account - Customer info"));	
+		Assert.assertTrue(customerInforPage.isCustomerInforPageDisplayed());	
 
 		//Customer Info -> Reward points
 		rewardPointsPage = (UserRewardPointsPageObject) customerInforPage.openPageAtMyAccountByName(driver, "Reward points");

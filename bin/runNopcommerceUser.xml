@@ -14,7 +14,7 @@
     <parameter name = "browser" value = "chrome" />		
     <classes>
       <!--<class name="com.nopcommerce.common.Common_Register"/>-->
-      <class name="com.nopcommerce.user.Level_17_Custom_Close_Driver"/>
+      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object"/>
     </classes>
   </test> <!-- Test -->
 

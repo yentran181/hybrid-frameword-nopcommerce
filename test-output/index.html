@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NopCommerce_-_User" class="navigator-link">
-              <span class="suite-name border-passed">NopCommerce - User</span>
+              <span class="suite-name border-failed">NopCommerce - User</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NopCommerce_-_User" class="hide-methods failed suite-NopCommerce_-_User"> (hide)</a> <!-- hide-methods failed suite-NopCommerce_-_User -->
+                      <a href="#" panel-name="suite-NopCommerce_-_User" class="show-methods failed suite-NopCommerce_-_User"> (show)</a> <!-- show-methods failed suite-NopCommerce_-_User -->
+                    </span>
+                    <div class="method-list-content failed suite-NopCommerce_-_User">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_P1_Pattern_Object" class="method navigator-link" hash-for-method="User_03_My_Account">User_03_My_Account</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-NopCommerce_-_User -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,32 +116,12 @@
                     <div class="method-list-content passed suite-NopCommerce_-_User">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_01_Empty_Data">Search_01_Empty_Data</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_P1_Pattern_Object" class="method navigator-link" hash-for-method="User_01_Register">User_01_Register</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_02_Relative_Product_Name">Search_02_Relative_Product_Name</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_03_Absolute_Product_Name">Search_03_Absolute_Product_Name</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_04_Parent_Category">Search_04_Parent_Category</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_05_Incorrect_Manufactorer">Search_05_Incorrect_Manufactorer</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_17_Custom_Close_Driver" class="method navigator-link" hash-for-method="Search_06_Correct_Manufactorer">Search_06_Correct_Manufactorer</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-NopCommerce_-_User" title="com.nopcommerce.user.Level_18_P1_Pattern_Object" class="method navigator-link" hash-for-method="User_02_Login">User_02_Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-NopCommerce_-_User -->
@@ -142,52 +136,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NopCommerce_-_User" class="panel NopCommerce_-_User">
-          <div class="suite-NopCommerce_-_User-class-passed">
+          <div class="suite-NopCommerce_-_User-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.user.Level_17_Custom_Close_Driver</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.user.Level_18_P1_Pattern_Object</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Search_01_Empty_Data">
-                  </a> <!-- Search_01_Empty_Data -->
-                  <span class="method-name">Search_01_Empty_Data</span>
+                  <a name="User_03_My_Account">
+                  </a> <!-- User_03_My_Account -->
+                  <span class="method-name">User_03_My_Account</span>
+                  <div class="stack-trace">java.lang.RuntimeException: Locator type is not supported!
+	at commons.BasePage.getByLocator(BasePage.java:318)
+	at commons.BasePage.getWebElement(BasePage.java:323)
+	at commons.BasePage.isElementDisplayed(BasePage.java:416)
+	at pageObjects.nopCommerce.user.UserCustomerInforPageObject.isCustomerInforPageDisplayed(UserCustomerInforPageObject.java:18)
+	at com.nopcommerce.user.Level_18_P1_Pattern_Object.User_03_My_Account(Level_18_P1_Pattern_Object.java:115)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NopCommerce_-_User-class-failed -->
+          <div class="suite-NopCommerce_-_User-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.nopcommerce.user.Level_18_P1_Pattern_Object</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_01_Register">
+                  </a> <!-- User_01_Register -->
+                  <span class="method-name">User_01_Register</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Search_02_Relative_Product_Name">
-                  </a> <!-- Search_02_Relative_Product_Name -->
-                  <span class="method-name">Search_02_Relative_Product_Name</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Search_03_Absolute_Product_Name">
-                  </a> <!-- Search_03_Absolute_Product_Name -->
-                  <span class="method-name">Search_03_Absolute_Product_Name</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Search_04_Parent_Category">
-                  </a> <!-- Search_04_Parent_Category -->
-                  <span class="method-name">Search_04_Parent_Category</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Search_05_Incorrect_Manufactorer">
-                  </a> <!-- Search_05_Incorrect_Manufactorer -->
-                  <span class="method-name">Search_05_Incorrect_Manufactorer</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Search_06_Correct_Manufactorer">
-                  </a> <!-- Search_06_Correct_Manufactorer -->
-                  <span class="method-name">Search_06_Correct_Manufactorer</span>
+                  <a name="User_02_Login">
+                  </a> <!-- User_02_Login -->
+                  <span class="method-name">User_02_Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,7 +199,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on Chrome&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.user.Level_17_Custom_Close_Driver&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.user.Level_18_P1_Pattern_Object&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on Chrome --&gt;
 &lt;/suite&gt; &lt;!-- NopCommerce - User --&gt;
@@ -250,36 +239,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Search_01_Empty_Data')
-data.setCell(0, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(0, 3, 313);
+data.setCell(0, 1, 'User_01_Register')
+data.setCell(0, 2, 'com.nopcommerce.user.Level_18_P1_Pattern_Object')
+data.setCell(0, 3, 5903);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Search_03_Absolute_Product_Name')
-data.setCell(1, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(1, 3, 49);
+data.setCell(1, 1, 'User_02_Login')
+data.setCell(1, 2, 'com.nopcommerce.user.Level_18_P1_Pattern_Object')
+data.setCell(1, 3, 2513);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Search_04_Parent_Category')
-data.setCell(2, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(2, 3, 21);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Search_06_Correct_Manufactorer')
-data.setCell(3, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(3, 3, 19);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Search_05_Incorrect_Manufactorer')
-data.setCell(4, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(4, 3, 17);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'Search_02_Relative_Product_Name')
-data.setCell(5, 2, 'com.nopcommerce.user.Level_17_Custom_Close_Driver')
-data.setCell(5, 3, 11);
+data.setCell(2, 1, 'User_03_My_Account')
+data.setCell(2, 2, 'com.nopcommerce.user.Level_18_P1_Pattern_Object')
+data.setCell(2, 3, 604);
 window.suiteTableData['NopCommerce_-_User']= { tableData: data, tableDiv: 'times-div-NopCommerce_-_User'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 430 ms</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-NopCommerce_-_User">
               </div> <!-- times-div-NopCommerce_-_User -->
             </div> <!-- times-div -->
@@ -290,6 +267,55 @@ return data;
             <span class="header-content">Reporter output for NopCommerce - User</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_02_Login</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-04-22 09:21:35,396] Login 01: Navigate to 'Login' page
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:36,036] Login 02: Enter to Email textbox with value is: yentran22082@gmail.com
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:36,416] Login 03: Enter to Password textbox with value is: 123456
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:36,659] Login 04: Click to 'Login' button
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:37,722] Login 05: Verify 'My Account' link is displayed
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_01_Register</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-04-22 09:21:29,512] Register - Step 01: Navigate to 'Register' page
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:31,016] Register - Step 02: Select gender is: Female
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:31,306] Register - Step 02: Enter to Firstname textbox with value is: Automation
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:31,855] Register - Step 03: Enter to LastName textbox with value is: FC
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:32,124] Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: 18/1/1997
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:32,986] Register - Step 04: Enter to Email textbox with value is: yentran22082@gmail.com
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:33,469] Register - Step 05: Enter to Password textbox with value is: 123456
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:33,731] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:34,011] Register - Step 07: Click to 'Register' button
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:35,076] Register - Step 08: Verify register success message is displayed
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">User_03_My_Account</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">[2023-04-22 09:21:37,918] My Account - Step 01: Navigate to 'My Account' page
+<br></span>
+                <span class="reporter-method-output">[2023-04-22 09:21:38,509] My Account - Step 02: Verify 'Customer Infor' page is displayed
+<br></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-NopCommerce_-_User" class="panel">
@@ -305,42 +331,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.user.Level_17_Custom_Close_Driver</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nopcommerce.user.Level_18_P1_Pattern_Object</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initBeforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">106 ms</span>
+                <span class="method-start">167 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Search_01_Empty_Data</span>
-                <span class="method-start">11682 ms</span>
+                <span class="method-name">User_01_Register</span>
+                <span class="method-start">9483 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Search_02_Relative_Product_Name</span>
-                <span class="method-start">12781 ms</span>
+                <span class="method-name">User_02_Login</span>
+                <span class="method-start">15552 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Search_03_Absolute_Product_Name</span>
-                <span class="method-start">12802 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Search_04_Parent_Category</span>
-                <span class="method-start">12880 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Search_05_Incorrect_Manufactorer</span>
-                <span class="method-start">12968 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Search_06_Correct_Manufactorer</span>
-                <span class="method-start">12999 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_03_My_Account</span>
+                <span class="method-start">18072 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">13046 ms</span>
+                <span class="method-start">18690 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
