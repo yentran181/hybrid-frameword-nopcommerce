@@ -10,7 +10,12 @@ public class GlobalConstants {
 	public static final String JQUERY2_PAGE_URL = "https://www.jqueryscript.net/demo/jQuery-Dynamic-Data-Grid-Plugin-appendGrid/";
 	public static final String JQUERY_FILE_UPLOAD_URL = "https://blueimp.github.io/jQuery-File-Upload/";
 	
+	public static final String WORDPRESS_ADMIN = "http://localhost:90/wp-admin/";
+	public static final String WORDPRESS_USER = "http://localhost:90/"; 
+	
 	public static final String FACEBOOK_PAGE_URL = "https://www.facebook.com/";
+	
+	public static final String SAUCELAB_PAGE_URL = "https://www.saucedemo.com/inventory.html";
 
 	public static final String PROJECT_PATH = System.getProperty("user.dir");
 	public static final String OS_NAME = System.getProperty("os.name");
@@ -37,7 +42,8 @@ public class GlobalConstants {
 	public static final long LONG_TIMEOUT = 30;
 	public static final long RETRY_TEST_FAIL = 3;
 	
-	public static final String JAVA_VERSION = System.getProperty("java.vesion");
+	public static final String JAVA_VERSION = System.getProperty("java.version");
+	public static final String THINKPRO = "https://thinkpro.vn/thuong-hieu/razer/laptop";
 
 
 }

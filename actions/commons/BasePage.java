@@ -223,7 +223,6 @@ public class BasePage {
 		checkToCheckboxOrRadio(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
 	}
 	
-
 	/**
 	 * Get value in textbox by textboxID
 	 * @author yentt
@@ -235,6 +234,17 @@ public class BasePage {
 		waitForElemetVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 		return getAttributeValue(driver, "value", BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
 	}
+	
+	public pageObjects.wordpress.AdminDashboardPageObject openAdminSite(WebDriver driver, String adminPageUrl) {
+		openPageUrl(driver, adminPageUrl);
+		return pageObjects.wordpress.PageGeneraterManager.getAdminDashboardPage(driver);
+	}
+	
+	public pageObjects.wordpress.UserHomePageObject openEndUserSite(WebDriver driver, String endUserUrl) {
+		openPageUrl(driver, endUserUrl);
+		return pageObjects.wordpress.PageGeneraterManager.getUserHomePage(driver);
+	}
+	
 	//Tối ưu ở Level_08_Switch_Role
 	public UserHomePageObject clickToLogoutLinkAtUserPage(WebDriver driver) {
 		waitForElemetClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AT_USER);
@@ -303,7 +313,7 @@ public class BasePage {
 	
 	private By getByLocator(String locatorType) {
 		By by = null;
-		System.out.println("Locator type: " + locatorType);
+		//System.out.println("Locator type: " + locatorType);
 		if (locatorType.startsWith("id=") || locatorType.startsWith("ID=") || locatorType.startsWith("Id=")) {
 			by = By.id(locatorType.substring(3));
 		} else if (locatorType.startsWith("class=") || locatorType.startsWith("CLASS=") || locatorType.startsWith("Class=")) {
@@ -346,13 +356,18 @@ public class BasePage {
 		element.sendKeys(inputValue);
 	}
 	
+	public void clearValueInElementByPressKey(WebDriver driver, String dynamicLocator, String... dynamicValues) {
+		WebElement element = getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues));
+		element.sendKeys(Keys.chord(Keys.CONTROL,"a", Keys.DELETE));
+	}
+	
 	public String getTextElement(WebDriver driver, String dynamicLocator, String... dynamicValues) {
 		return getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues)).getText();
 	}
 	
 	public void selectItemInDefaultDropdown(WebDriver driver, String textItem, String dynamicLocator, String... dynamicValues) {
 		Select select = new Select(getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues)));
-		select.selectByValue(textItem);
+		select.selectByVisibleText(textItem);
 	}
 
 	public String getSelectedItemInDefaultDropdown(WebDriver driver, String dynamicLocator, String... dynamicValues) {
@@ -373,7 +388,7 @@ public class BasePage {
 		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(castRestParameter(dynamicLocator, dynamicValues))));
 		for (WebElement item : allItems) {
 			if (item.getText().equals(expectedTextItem)) {
-				jsExecutor.executeScript("arguments[0].scrollInToView(true);", item);
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", item);
 				sleepInSecond(1);
 				item.click();
 				break;
@@ -403,6 +418,13 @@ public class BasePage {
 			element.click();
 		}
 	}
+	
+	public void checkToCheckboxOrRadioByJS (WebDriver driver, String dynamicLocator, String... dynamicValues) {
+		WebElement element = getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues));
+		if (!element.isSelected()) {
+			clickToElementByJS(driver, dynamicLocator, dynamicValues);
+		}
+	}
 
 	public void uncheckToCheckboxOrRadio (WebDriver driver, String dynamicLocator, String... dynamicValues) {
 		WebElement element = getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues));
@@ -410,6 +432,14 @@ public class BasePage {
 			element.click();
 		}
 	}
+	
+	public void uncheckToCheckboxOrRadioByJS (WebDriver driver, String dynamicLocator, String... dynamicValues) {
+		WebElement element = getWebElement(driver, castRestParameter(dynamicLocator, dynamicValues));
+		if (element.isSelected()) {
+			clickToElementByJS(driver, dynamicLocator, dynamicValues);
+		}
+	}
+
 
 	public boolean isElementDisplayed(WebDriver driver, String dynamicLocator, String... dynamicValues) {
 		try {

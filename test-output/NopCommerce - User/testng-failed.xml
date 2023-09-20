@@ -7,16 +7,16 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
   <test thread-count="5" name="Run on Chrome(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object">
+      <class name="com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search">
         <methods>
           <include name="beforeClass"/>
-          <include name="afterClass"/>
-          <include name="User_03_My_Account"/>
+          <include name="Post_01_Create_New_Post"/>
           <include name="initBeforeSuite"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_18_P1_Pattern_Object -->
+      </class> <!-- com.wordpress.admin.Post_01_Create_Read_Update_Delete_Search -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
 </suite> <!-- Failed suite [NopCommerce - User] -->

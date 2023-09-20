@@ -30,7 +30,7 @@ public class MethodListener implements IInvokedMethodListener {
 
 			List<Throwable> failures = allFailures.getFailuresForTest(result);
 			int size = failures.size() - 1;
-
+ 
 			if (size > 0) {
 				result.setStatus(ITestResult.FAILURE);
 				if (size == 1) {

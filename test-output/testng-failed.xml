@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [NopCommerce - User]">
+<suite thread-count="3" name="Failed suite [SauceLab - Sort]">
   <listeners>
     <listener class-name="commons.MethodListener"/>
-    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>
-  <test thread-count="5" name="Run on Chrome(failed)">
+  <test thread-count="3" name="Run on Chrome(failed)">
+    <parameter name="date" value="18"/>
+    <parameter name="firstname" value="Automation"/>
+    <parameter name="password" value="123456"/>
+    <parameter name="gender" value="Female"/>
+    <parameter name="month" value="1"/>
+    <parameter name="year" value="1997"/>
     <parameter name="browser" value="chrome"/>
+    <parameter name="lastname" value="FC"/>
     <classes>
-      <class name="com.nopcommerce.user.Level_18_P1_Pattern_Object">
+      <class name="com.nopcommerce.user.Level_20_Manage_Data_Part_IV">
         <methods>
-          <include name="beforeClass"/>
           <include name="afterClass"/>
           <include name="User_03_My_Account"/>
+          <include name="beforeClass"/>
           <include name="initBeforeSuite"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Level_18_P1_Pattern_Object -->
+      </class> <!-- com.nopcommerce.user.Level_20_Manage_Data_Part_IV -->
     </classes>
   </test> <!-- Run on Chrome(failed) -->
-</suite> <!-- Failed suite [NopCommerce - User] -->
+</suite> <!-- Failed suite [SauceLab - Sort] -->

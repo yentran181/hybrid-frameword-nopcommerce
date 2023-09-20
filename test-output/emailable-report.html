@@ -8,36 +8,19 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">NopCommerce - User</th></tr>
-<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">20,167</td><td></td><td></td></tr>
+<tr><th colspan="7">SauceLab - Sort</th></tr>
+<tr><td><a href="#t0">Run on Chrome</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,564</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">NopCommerce - User</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.user.Level_18_P1_Pattern_Object</td><td><a href="#m0">User_03_My_Account</a></td><td rowspan="1">1682130097906</td><td rowspan="1">604</td></tr><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nopcommerce.user.Level_18_P1_Pattern_Object</td><td><a href="#m1">User_01_Register</a></td><td rowspan="1">1682130089317</td><td rowspan="1">5903</td></tr><tr class="passedeven"><td><a href="#m2">User_02_Login</a></td><td rowspan="1">1682130095386</td><td rowspan="1">2513</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">SauceLab - Sort</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on Chrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.nopcommerce.user.Level_20_Manage_Data_Part_IV</td><td><a href="#m0">User_03_My_Account</a></td><td rowspan="1">1690625651282</td><td rowspan="1">541</td></tr><tr><th colspan="4">Run on Chrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nopcommerce.user.Level_20_Manage_Data_Part_IV</td><td><a href="#m1">User_01_Register</a></td><td rowspan="1">1690625644531</td><td rowspan="1">4651</td></tr><tr class="passedeven"><td><a href="#m2">User_02_Login</a></td><td rowspan="1">1690625649279</td><td rowspan="1">1995</td></tr></tbody>
 </table>
-<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.user.Level_18_P1_Pattern_Object#User_03_My_Account</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2023-04-22 09:21:37,918] My Account - Step 01: Navigate to 'My Account' page
-<br><br/>[2023-04-22 09:21:38,509] My Account - Step 02: Verify 'Customer Infor' page is displayed
-<br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Locator type is not supported!
-	at commons.BasePage.getByLocator(BasePage.java:318)
-	at commons.BasePage.getWebElement(BasePage.java:323)
-	at commons.BasePage.isElementDisplayed(BasePage.java:416)
+<h2>Run on Chrome</h2><h3 id="m0">com.nopcommerce.user.Level_20_Manage_Data_Part_IV#User_03_My_Account</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: Locator type is not supported!
+	at commons.BasePage.getByLocator(BasePage.java:328)
+	at commons.BasePage.getWebElement(BasePage.java:333)
+	at commons.BasePage.isElementDisplayed(BasePage.java:446)
 	at pageObjects.nopCommerce.user.UserCustomerInforPageObject.isCustomerInforPageDisplayed(UserCustomerInforPageObject.java:18)
-	at com.nopcommerce.user.Level_18_P1_Pattern_Object.User_03_My_Account(Level_18_P1_Pattern_Object.java:115)
+	at com.nopcommerce.user.Level_20_Manage_Data_Part_IV.User_03_My_Account(Level_20_Manage_Data_Part_IV.java:122)
 ... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.nopcommerce.user.Level_18_P1_Pattern_Object#User_01_Register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2023-04-22 09:21:29,512] Register - Step 01: Navigate to 'Register' page
-<br><br/>[2023-04-22 09:21:31,016] Register - Step 02: Select gender is: Female
-<br><br/>[2023-04-22 09:21:31,306] Register - Step 02: Enter to Firstname textbox with value is: Automation
-<br><br/>[2023-04-22 09:21:31,855] Register - Step 03: Enter to LastName textbox with value is: FC
-<br><br/>[2023-04-22 09:21:32,124] Register - Step 04: Select Date Of Birth in dropdown with value d/m/y: 18/1/1997
-<br><br/>[2023-04-22 09:21:32,986] Register - Step 04: Enter to Email textbox with value is: yentran22082@gmail.com
-<br><br/>[2023-04-22 09:21:33,469] Register - Step 05: Enter to Password textbox with value is: 123456
-<br><br/>[2023-04-22 09:21:33,731] Register - Step 06: Enter to ConfirmPassword textbox with value is: 123456
-<br><br/>[2023-04-22 09:21:34,011] Register - Step 07: Click to 'Register' button
-<br><br/>[2023-04-22 09:21:35,076] Register - Step 08: Verify register success message is displayed
-<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.nopcommerce.user.Level_18_P1_Pattern_Object#User_02_Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[2023-04-22 09:21:35,396] Login 01: Navigate to 'Login' page
-<br><br/>[2023-04-22 09:21:36,036] Login 02: Enter to Email textbox with value is: yentran22082@gmail.com
-<br><br/>[2023-04-22 09:21:36,416] Login 03: Enter to Password textbox with value is: 123456
-<br><br/>[2023-04-22 09:21:36,659] Login 04: Click to 'Login' button
-<br><br/>[2023-04-22 09:21:37,722] Login 05: Verify 'My Account' link is displayed
-<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.user.Level_20_Manage_Data_Part_IV#User_01_Register</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.nopcommerce.user.Level_20_Manage_Data_Part_IV#User_02_Login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
